@@ -5,6 +5,7 @@ Usage: python -m leadengine.demo   (needs the brain API running; BRAIN_URL defau
 """
 import json
 import os
+import uuid
 from pathlib import Path
 
 import httpx
@@ -37,8 +38,11 @@ def run() -> list[dict]:
         ingest = httpx.post(f"{BRAIN}/ingest", json={"business_id": slug, "business_name": lead["name"],
                                                     "sources": files}, timeout=300).json()
         turns = []
+        # A fresh session per run: the brain remembers name + phone per session, and a reused id would let
+        # the bot "know" the prospect's number before they give it.
+        session = f"demo-{slug}-{uuid.uuid4().hex[:8]}"
         for msg in SCRIPTS[slug]:
-            r = httpx.post(f"{BRAIN}/chat", json={"business_id": slug, "session_id": f"demo-{slug}",
+            r = httpx.post(f"{BRAIN}/chat", json={"business_id": slug, "session_id": session,
                                                   "message": msg}, timeout=120).json()
             turns.append({"user": msg, "bot": r["reply"], "state": r["state"],
                           "citations": [c["section"] for c in r.get("citations", [])]})

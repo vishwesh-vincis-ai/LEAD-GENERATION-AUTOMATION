@@ -63,7 +63,7 @@ Collection (search and scrape) ran through Firecrawl; raw responses are stored v
 - A gap goes into a draft only if a deeper page doesn't contradict it.
 
 ## Next
-1. Fix the McLane hours miss in the brain (see `casestudy/index.html`: "Fri." scores 0.28, under the 0.30 cutoff), then re-record demos
+1. Merge the brain's hours fix (langflow-brain branch `claude/nice-carson-iqf3xo`); until then the demos need that branch running
 2. Verify leads 6–11 (one deeper page each)
 3. Google Places for discovery and review-response rate (needs `GOOGLE_PLACES_API_KEY`)
 4. Reply classification and a CRM table in Supabase

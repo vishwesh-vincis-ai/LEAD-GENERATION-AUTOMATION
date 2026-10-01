@@ -18,10 +18,9 @@ OUT = Path(__file__).parent / "index.html"
 GRADES = {
     "mclanefamilydental": [
         ("ok", 'Page: "We Are accepting new patients."'),
-        ("miss", 'Page: "Fri. Closed." The answer was on the page; the bot handed off.'),
+        ("ok", 'Page: "Fri. Closed." The first recording missed this; see "Found and fixed" below.'),
         ("ok", 'Page: "Sedation Dentistry" under Featured Services.'),
-        ("handoff", "No prices on the page. Handoff is right, but the bot re-asked for details "
-                    "without acknowledging the new question."),
+        ("handoff", "No prices on the page, so the bot hands off and asks for details."),
         ("contact", "Name and phone captured in one turn."),
     ],
     "hillcountryfamilydental": [
@@ -40,8 +39,14 @@ GRADES = {
     ],
 }
 
-# Measured 2026-10-01 against the brain on NVIDIA (llama-nemotron-embed-vl-1b-v2, 1024-d), McLane tenant.
+# Measured 2026-10-01 against the brain on NVIDIA (llama-nemotron-embed-vl-1b-v2, 1024-d), McLane tenant,
+# before the fix. The "before" answer is from the first recording of data/demos.json.
 DIAGNOSIS = {
+    "before": "I don't have that information right now, so I'll connect you with our team. "
+              "Could you share your name and phone number?",
+    "after": "No, we are closed on Fridays. [1]",
+    "tests": "13 new brain tests (8 abbreviation cases, 1 schedule label, 4 hours questions); 38/38 brain tests pass",
+    "evals": "Brain evals 53/54 before and after the fix (3 hours questions added; the one miss is x02, unchanged)",
     "chunk": "Office Schedule",
     "body": "Mon. 8am – 5pm. Tue. 8am – 5pm. Wed. 8am – 5pm. Thu. 8am – 5pm. Fri. Closed. Sat. Closed. Sun. Closed.",
     "threshold": 0.30,
@@ -120,7 +125,7 @@ def build() -> str:
         <article class="convo" id="{h(d["slug"])}">
           <header>
             <h3>{h(d["name"])}</h3>
-            <p class="sub">Lead #{lead["rank"]} · loaded with {h(", ".join(d["pages"]))} ({d["ingest"]["chunks"]} chunks) ·
+            <p class="sub">Lead #{lead["rank"]} · loaded with {h(", ".join(d["pages"]))} ·
                {n_ok}/{len(d["turns"])} turns right</p>
           </header>
           <ol class="turns">{"".join(turns)}</ol>
@@ -128,7 +133,7 @@ def build() -> str:
 
     probes = "".join(
         f"<tr><td>{h(q_)}</td><td class='num'>{s:.3f}</td><td class='num'>{nxt:.3f}</td>"
-        f"<td class='num'>{DIAGNOSIS['threshold']:.2f}</td><td><span class='pill pill-miss'>Filtered out</span></td></tr>"
+        f"<td class='num'>{DIAGNOSIS['threshold']:.2f}</td><td><span class='pill pill-miss'>Filtered out before fix</span></td></tr>"
         for q_, s, nxt in DIAGNOSIS["probes"])
 
     rejected = "".join(
@@ -158,6 +163,10 @@ def build() -> str:
             .replace("{{CONVOS}}", "".join(convos))
             .replace("{{DIAG_BODY}}", h(DIAGNOSIS["body"]))
             .replace("{{DIAG_PROBES}}", probes)
+            .replace("{{DIAG_BEFORE}}", h(DIAGNOSIS["before"]))
+            .replace("{{DIAG_AFTER}}", h(DIAGNOSIS["after"]))
+            .replace("{{DIAG_TESTS}}", h(DIAGNOSIS["tests"]))
+            .replace("{{DIAG_EVALS}}", h(DIAGNOSIS["evals"]))
             .replace("{{THRESHOLD}}", f"{DIAGNOSIS['threshold']:.2f}"))
 
 

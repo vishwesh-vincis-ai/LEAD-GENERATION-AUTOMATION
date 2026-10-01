@@ -7,10 +7,10 @@
       "home.md"
     ],
     "ingest": {
-      "added": 1,
+      "added": 0,
       "updated": 0,
-      "unchanged": 0,
-      "chunks": 7
+      "unchanged": 1,
+      "chunks": 0
     },
     "turns": [
       {
@@ -23,21 +23,23 @@
       },
       {
         "user": "Are you open on Fridays?",
-        "bot": "I don't have that information right now, so I'll connect you with our team. Could you share your name and phone number?",
-        "state": "collecting_details",
-        "citations": []
+        "bot": "No, we are closed on Fridays. [1]",
+        "state": "idle",
+        "citations": [
+          "Office Schedule (opening hours)"
+        ]
       },
       {
         "user": "Do you offer sedation dentistry?",
-        "bot": "Yes, we offer sedation dentistry. [1]\n\nFor your earlier question: Could you share your name and phone number?",
-        "state": "collecting_details",
+        "bot": "Yes, we offer sedation dentistry. [1]",
+        "state": "idle",
         "citations": [
           "Featured Services"
         ]
       },
       {
         "user": "How much is a cleaning without insurance?",
-        "bot": "Could you share your name and phone number?",
+        "bot": "I don't have that information right now, so I'll connect you with our team. Could you share your name and phone number?",
         "state": "collecting_details",
         "citations": []
       },
@@ -57,10 +59,10 @@
       "faq.md"
     ],
     "ingest": {
-      "added": 1,
+      "added": 0,
       "updated": 0,
-      "unchanged": 0,
-      "chunks": 11
+      "unchanged": 1,
+      "chunks": 0
     },
     "turns": [
       {
@@ -109,10 +111,10 @@
       "get-started.md"
     ],
     "ingest": {
-      "added": 1,
+      "added": 0,
       "updated": 0,
-      "unchanged": 0,
-      "chunks": 11
+      "unchanged": 1,
+      "chunks": 0
     },
     "turns": [
       {
