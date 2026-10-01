@@ -1,0 +1,780 @@
+{
+  "query": {
+    "city": "Austin, TX",
+    "niches": [
+      "dental",
+      "fitness coach"
+    ]
+  },
+  "collected_at": "2026-10-01",
+  "leads": [
+    {
+      "rank": 1,
+      "first_pass_rank": 1,
+      "first_pass_score": 84.0,
+      "score": 84.0,
+      "pain": 80,
+      "fit": 90,
+      "slug": "mclanefamilydental",
+      "name": "McLane Family Dental",
+      "niche": "dental",
+      "url": "https://mclanefamilydental.com/",
+      "phone": "512.292.8002",
+      "address": "5000 W. Slaughter Lane, Suite 200, Austin, TX 78749",
+      "services": [
+        "General Dentistry",
+        "Cosmetic Dentistry",
+        "Restorative Dentistry",
+        "Sedation Dentistry"
+      ],
+      "booking": "none",
+      "booking_evidence": "no scheduler or booking page linked from the homepage",
+      "text_option": false,
+      "prices": [],
+      "hours": "Mon. 8am \u2013 5pm, Tue. 8am \u2013 5pm, Wed. 8am \u2013 5pm, Thu. 8am \u2013 5pm, Fri. Closed, Sat. Closed, Sun. Closed",
+      "has_faq": false,
+      "offer": null,
+      "gaps": [
+        {
+          "key": "no_booking",
+          "points": 30,
+          "headline": "New patients can't book online; there is no scheduler on the site",
+          "evidence": "no scheduler or booking page linked from the homepage"
+        },
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; patients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "limited_hours",
+          "points": 15,
+          "headline": "Closed days mean calls and questions go unanswered for days",
+          "evidence": "hours on site: Mon. 8am \u2013 5pm, Tue. 8am \u2013 5pm, Wed. 8am \u2013 5pm, Thu. 8am \u2013 5pm, Fri. Closed, Sat. Closed, Sun. Closed"
+        },
+        {
+          "key": "no_prices",
+          "points": 10,
+          "headline": "No prices on the homepage, so price-shoppers have to call to ask",
+          "evidence": "no dollar amounts on the homepage"
+        },
+        {
+          "key": "no_faq",
+          "points": 10,
+          "headline": "No FAQ, so the same questions land on the front desk",
+          "evidence": "no FAQ section or FAQ page linked"
+        }
+      ],
+      "corrections": [
+        "model said online booking from the text 'Make appointment'; no booking link exists"
+      ],
+      "verification": {
+        "verified": true,
+        "pages": [
+          "home.md"
+        ],
+        "dropped": [],
+        "confirmed": []
+      },
+      "demo": true,
+      "outreach": {
+        "to": "McLane Family Dental",
+        "subject": "New patients can't book online at McLane Family Dental",
+        "body": "Hi McLane Family Dental team,\n\nI looked at mclanefamilydental.com and noticed two things:\n- New patients can't book online; there is no scheduler on the site.\n- No way to text or chat; patients who won't call have no option.\n\nI built a small assistant that already knows your site, down to your hours (Mon. 8am \u2013 5pm, ...). It answers patients' questions with the source, hands anything it can't answer to your team with the person's name and number, and can be connected to your calendar to book directly. Want the 2-minute demo link?\n\n[Your name]\n[Your business address]\nIf this isn't useful, reply \"no thanks\" and I won't follow up.",
+        "cites": [
+          {
+            "gap": "no_booking",
+            "evidence": "no scheduler or booking page linked from the homepage"
+          },
+          {
+            "gap": "no_text",
+            "evidence": "no sms: link or text/chat option on the homepage"
+          }
+        ],
+        "status": "draft \u2014 needs human approval"
+      }
+    },
+    {
+      "rank": 2,
+      "first_pass_rank": 2,
+      "first_pass_score": 70.0,
+      "score": 70.0,
+      "pain": 50,
+      "fit": 100,
+      "slug": "hillcountryfamilydental",
+      "name": "Hill Country Family Dental",
+      "niche": "dental",
+      "url": "https://hillcountryfamilydental.com/",
+      "phone": "+15122499147",
+      "address": "12129 North FM 620, Suite 300, Austin, TX 78750",
+      "services": [
+        "Exams & Cleanings",
+        "Missing One Tooth",
+        "Teeth Whitening",
+        "Veneers",
+        "Sleep Apnea",
+        "Snoring",
+        "Root Canals",
+        "Crowns & Bridges",
+        "Fillings & Bonding",
+        "Gum Disease",
+        "Extractions",
+        "Full & Partial Dentures",
+        "Oral Cancer Screening",
+        "Dentistry for Children",
+        "Dental Sealants",
+        "Fluoride Treatment"
+      ],
+      "booking": "request_form",
+      "booking_evidence": "https://hillcountryfamilydental.com/request-appt-wizard.html#apptreq",
+      "text_option": false,
+      "prices": [
+        "$49 Emergency Exam & X-ray"
+      ],
+      "hours": "Mon - Thurs: 8am \u2013 5pm | Fri - Sun: Closed",
+      "has_faq": true,
+      "offer": "New patients only. Not valid with any insurance. In absence of periodontal or gum disease.",
+      "gaps": [
+        {
+          "key": "request_form_only",
+          "points": 20,
+          "headline": "Booking is a request form, so every request waits for a call back",
+          "evidence": "https://hillcountryfamilydental.com/request-appt-wizard.html#apptreq"
+        },
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; patients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "limited_hours",
+          "points": 15,
+          "headline": "Closed days mean calls and questions go unanswered for days",
+          "evidence": "hours on site: Mon - Thurs: 8am \u2013 5pm | Fri - Sun: Closed"
+        }
+      ],
+      "corrections": [],
+      "verification": {
+        "verified": true,
+        "pages": [
+          "faq.md"
+        ],
+        "dropped": [],
+        "confirmed": []
+      },
+      "demo": true,
+      "outreach": {
+        "to": "Hill Country Family Dental",
+        "subject": "Booking is a request form at Hill Country Family Dental",
+        "body": "Hi Hill Country Family Dental team,\n\nI looked at hillcountryfamilydental.com and noticed two things:\n- Booking is a request form, so every request waits for a call back.\n- No way to text or chat; patients who won't call have no option.\n\nI built a small assistant that already knows your site, down to details like \"$49 Emergency Exam & X-ray\". It answers patients' questions with the source, hands anything it can't answer to your team with the person's name and number, and can be connected to your calendar to book directly. Want the 2-minute demo link?\n\n[Your name]\n[Your business address]\nIf this isn't useful, reply \"no thanks\" and I won't follow up.",
+        "cites": [
+          {
+            "gap": "request_form_only",
+            "evidence": "https://hillcountryfamilydental.com/request-appt-wizard.html#apptreq"
+          },
+          {
+            "gap": "no_text",
+            "evidence": "no sms: link or text/chat option on the homepage"
+          }
+        ],
+        "status": "draft \u2014 needs human approval"
+      }
+    },
+    {
+      "rank": 3,
+      "first_pass_rank": 4,
+      "first_pass_score": 63.0,
+      "score": 63.0,
+      "pain": 65,
+      "fit": 60,
+      "slug": "saustindentist",
+      "name": "South Austin Family Dental",
+      "niche": "dental",
+      "url": "https://www.saustindentist.com/",
+      "phone": null,
+      "address": null,
+      "services": [
+        "Invisalign",
+        "whitening",
+        "crowns",
+        "fillings",
+        "root canals",
+        "dentures",
+        "partial dentures",
+        "implants",
+        "porcelain veneers",
+        "bridges",
+        "extractions"
+      ],
+      "booking": "none",
+      "booking_evidence": "no scheduler or booking page linked from the homepage",
+      "text_option": false,
+      "prices": [],
+      "hours": null,
+      "has_faq": false,
+      "offer": null,
+      "gaps": [
+        {
+          "key": "no_booking",
+          "points": 30,
+          "headline": "New patients can't book online; there is no scheduler on the site",
+          "evidence": "Please call 512-280-1117 to begin the process of becoming a new patient."
+        },
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; patients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "no_prices",
+          "points": 10,
+          "headline": "No prices on the homepage, so price-shoppers have to call to ask",
+          "evidence": "no dollar amounts on the homepage"
+        },
+        {
+          "key": "no_faq",
+          "points": 10,
+          "headline": "No FAQ, so the same questions land on the front desk",
+          "evidence": "no FAQ section or FAQ page linked"
+        }
+      ],
+      "corrections": [],
+      "verification": {
+        "verified": true,
+        "pages": [
+          "before-your-visit.md"
+        ],
+        "dropped": [],
+        "confirmed": [
+          {
+            "gap": "no_booking",
+            "because": "Please call 512-280-1117 to begin the process of becoming a new patient."
+          }
+        ]
+      },
+      "demo": false,
+      "outreach": {
+        "to": "South Austin Family Dental",
+        "subject": "New patients can't book online at South Austin Family Dental",
+        "body": "Hi South Austin Family Dental team,\n\nI looked at www.saustindentist.com and noticed two things:\n- New patients can't book online; there is no scheduler on the site.\n- No way to text or chat; patients who won't call have no option.\n\nI build assistants that answer patients' questions from your own site, book appointments and pass anything else to your team. Happy to set up a free demo on your real info.\n\n[Your name]\n[Your business address]\nIf this isn't useful, reply \"no thanks\" and I won't follow up.",
+        "cites": [
+          {
+            "gap": "no_booking",
+            "evidence": "Please call 512-280-1117 to begin the process of becoming a new patient."
+          },
+          {
+            "gap": "no_text",
+            "evidence": "no sms: link or text/chat option on the homepage"
+          }
+        ],
+        "status": "draft \u2014 needs human approval"
+      }
+    },
+    {
+      "rank": 4,
+      "first_pass_rank": 5,
+      "first_pass_score": 57.0,
+      "score": 51.0,
+      "pain": 45,
+      "fit": 60,
+      "slug": "austinsimplyfit",
+      "name": "Austin Simply Fit",
+      "niche": "fitness coach",
+      "url": "https://www.austinsimplyfit.com/",
+      "phone": null,
+      "address": "1621 S Lamar Blvd, Austin, Texas 78704",
+      "services": [
+        "1-on-1 personal training",
+        "multi-client personal training"
+      ],
+      "booking": "request_form",
+      "booking_evidence": "https://www.austinsimplyfit.com/get-started/",
+      "text_option": false,
+      "prices": [],
+      "hours": null,
+      "has_faq": false,
+      "offer": null,
+      "gaps": [
+        {
+          "key": "request_form_only",
+          "points": 20,
+          "headline": "Booking is a request form, so every request waits for a call back",
+          "evidence": "A member of our team will reach out to help you set up your FREE consultation and assessment."
+        },
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; clients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "no_prices",
+          "points": 10,
+          "headline": "No prices on the homepage, so price-shoppers have to call to ask",
+          "evidence": "no dollar amounts on the homepage"
+        }
+      ],
+      "corrections": [],
+      "verification": {
+        "verified": true,
+        "pages": [
+          "get-started.md"
+        ],
+        "dropped": [
+          {
+            "gap": "no_faq",
+            "because": "FAQ page found"
+          }
+        ],
+        "confirmed": [
+          {
+            "gap": "request_form_only",
+            "because": "A member of our team will reach out to help you set up your FREE consultation and assessment."
+          }
+        ]
+      },
+      "demo": true,
+      "outreach": {
+        "to": "Austin Simply Fit",
+        "subject": "Booking is a request form at Austin Simply Fit",
+        "body": "Hi Austin Simply Fit team,\n\nI looked at www.austinsimplyfit.com and noticed two things:\n- Booking is a request form, so every request waits for a call back.\n- No way to text or chat; clients who won't call have no option.\n\nI built a small assistant that already knows your site, including 1-on-1 personal training and multi-client personal training. It answers clients' questions with the source, hands anything it can't answer to your team with the person's name and number, and can be connected to your calendar to book directly. Want the 2-minute demo link?\n\n[Your name]\n[Your business address]\nIf this isn't useful, reply \"no thanks\" and I won't follow up.",
+        "cites": [
+          {
+            "gap": "request_form_only",
+            "evidence": "A member of our team will reach out to help you set up your FREE consultation and assessment."
+          },
+          {
+            "gap": "no_text",
+            "evidence": "no sms: link or text/chat option on the homepage"
+          }
+        ],
+        "status": "draft \u2014 needs human approval"
+      }
+    },
+    {
+      "rank": 5,
+      "first_pass_rank": 3,
+      "first_pass_score": 64.0,
+      "score": 46.0,
+      "pain": 10,
+      "fit": 100,
+      "slug": "outrightfitness",
+      "name": "Outright Fitness",
+      "niche": "fitness coach",
+      "url": "https://outrightfitness.com/",
+      "phone": "512.348.7113",
+      "address": "Austin TX Area & Online",
+      "services": [
+        "one-on-one coaching",
+        "semi-private coaching",
+        "youth and teen groups outdoors",
+        "adult morning group indoors",
+        "online coaching",
+        "speed development",
+        "strength development",
+        "athletic development"
+      ],
+      "booking": "request_form",
+      "booking_evidence": "https://outrightfitness.com/teen-booking/",
+      "text_option": true,
+      "prices": [],
+      "hours": null,
+      "has_faq": false,
+      "offer": "your first outdoor group session is free",
+      "gaps": [
+        {
+          "key": "no_faq",
+          "points": 10,
+          "headline": "No FAQ, so the same questions land on the front desk",
+          "evidence": "no FAQ section or FAQ page linked"
+        }
+      ],
+      "corrections": [
+        "model said prices listed; no dollar amount in ['pay what you can, at or above the minimum']"
+      ],
+      "verification": {
+        "verified": true,
+        "pages": [
+          "personal-training.md"
+        ],
+        "dropped": [
+          {
+            "gap": "request_form_only",
+            "because": "Buy the single session, and after checkout you are taken straight to the scheduler to pick your time."
+          },
+          {
+            "gap": "no_prices",
+            "because": "(1hr) Private Home Studio 1:1 Personal Training: Starting At $125.00 for Drop-In"
+          }
+        ],
+        "confirmed": []
+      },
+      "demo": false,
+      "outreach": {
+        "to": "Outright Fitness",
+        "subject": "No FAQ at Outright Fitness",
+        "body": "Hi Outright,\n\nI looked at outrightfitness.com and noticed two things:\n- No FAQ, so the same questions land on the front desk.\n\nI build assistants that answer clients' questions from your own site, book appointments and pass anything else to your team. Happy to set up a free demo on your real info.\n\n[Your name]\n[Your business address]\nIf this isn't useful, reply \"no thanks\" and I won't follow up.",
+        "cites": [
+          {
+            "gap": "no_faq",
+            "evidence": "no FAQ section or FAQ page linked"
+          }
+        ],
+        "status": "draft \u2014 needs human approval"
+      }
+    },
+    {
+      "rank": 6,
+      "first_pass_rank": 6,
+      "first_pass_score": 55.0,
+      "score": 55.0,
+      "pain": 25,
+      "fit": 100,
+      "slug": "familydentistryonmanchaca",
+      "name": "Family Dentistry on Manchaca",
+      "niche": "dental",
+      "url": "https://familydentistryonmanchaca.com/",
+      "phone": "512-428-5859",
+      "address": "11200 Manchaca Rd Bldg 4, Suite 4, Austin, TX 78748",
+      "services": [
+        "Family Dentistry",
+        "Cosmetic Dentistry",
+        "Invisalign",
+        "Restorative Dentistry",
+        "Root Canal Therapy",
+        "Dental Implants",
+        "Periodontal Surgeries",
+        "Sleep Apnea Treatment",
+        "Emergency Dentistry"
+      ],
+      "booking": "instant",
+      "booking_evidence": "https://www.flexbook.me/fdmanchaca/1",
+      "text_option": false,
+      "prices": [
+        "$29 Emergency Exam & X-Ray for new patients"
+      ],
+      "hours": "Monday 10:00 AM - 6:00 PM, Tuesday 8:00 AM - 4:00 PM, Wednesday 8:00 AM - 4:00 PM, Thursday 8:00 AM - 4:00 PM, Friday 8:00 AM - 2:00 PM, Saturday By Appointment",
+      "has_faq": false,
+      "offer": "Cleaning, Exam, & X-Ray for new patients; $29 Emergency Exam & X-Ray for new patients",
+      "gaps": [
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; patients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "no_faq",
+          "points": 10,
+          "headline": "No FAQ, so the same questions land on the front desk",
+          "evidence": "no FAQ section or FAQ page linked"
+        }
+      ],
+      "corrections": [],
+      "verification": {
+        "verified": false,
+        "dropped": [],
+        "confirmed": []
+      },
+      "demo": false,
+      "outreach": null
+    },
+    {
+      "rank": 7,
+      "first_pass_rank": 7,
+      "first_pass_score": 55.0,
+      "score": 55.0,
+      "pain": 65,
+      "fit": 40,
+      "slug": "kathrynalexander",
+      "name": "Kathryn Alexander",
+      "niche": "fitness coach",
+      "url": "https://www.kathrynalexander.com/",
+      "phone": null,
+      "address": null,
+      "services": [
+        "Personal Training in Austin",
+        "Online Personal Training"
+      ],
+      "booking": "none",
+      "booking_evidence": "no scheduler or booking page linked from the homepage",
+      "text_option": false,
+      "prices": [],
+      "hours": null,
+      "has_faq": false,
+      "offer": null,
+      "gaps": [
+        {
+          "key": "no_booking",
+          "points": 30,
+          "headline": "New clients can't book online; there is no scheduler on the site",
+          "evidence": "no scheduler or booking page linked from the homepage"
+        },
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; clients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "no_prices",
+          "points": 10,
+          "headline": "No prices on the homepage, so price-shoppers have to call to ask",
+          "evidence": "no dollar amounts on the homepage"
+        },
+        {
+          "key": "no_faq",
+          "points": 10,
+          "headline": "No FAQ, so the same questions land on the front desk",
+          "evidence": "no FAQ section or FAQ page linked"
+        }
+      ],
+      "corrections": [],
+      "verification": {
+        "verified": false,
+        "dropped": [],
+        "confirmed": []
+      },
+      "demo": false,
+      "outreach": null
+    },
+    {
+      "rank": 8,
+      "first_pass_rank": 8,
+      "first_pass_score": 55.0,
+      "score": 55.0,
+      "pain": 45,
+      "fit": 70,
+      "slug": "movewithpurpose",
+      "name": "Motive Training",
+      "niche": "fitness coach",
+      "url": "https://www.movewithpurpose.com/",
+      "phone": null,
+      "address": "714 Shelby Ln Suite E, Austin, TX 78745",
+      "services": [
+        "Personal Training",
+        "Movement Assessment",
+        "Stretching Classes",
+        "Online Mobility Training"
+      ],
+      "booking": "request_form",
+      "booking_evidence": "https://www.movewithpurpose.com/get-assessed",
+      "text_option": false,
+      "prices": [],
+      "hours": "Mon \u2013 Sat 5AM \u2013 8PM, Sunday 5AM \u2013 12PM",
+      "has_faq": true,
+      "offer": null,
+      "gaps": [
+        {
+          "key": "request_form_only",
+          "points": 20,
+          "headline": "Booking is a request form, so every request waits for a call back",
+          "evidence": "https://www.movewithpurpose.com/get-assessed"
+        },
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; clients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "no_prices",
+          "points": 10,
+          "headline": "No prices on the homepage, so price-shoppers have to call to ask",
+          "evidence": "no dollar amounts on the homepage"
+        }
+      ],
+      "corrections": [
+        "model said text/chat from 'short call'; that is not texting"
+      ],
+      "verification": {
+        "verified": false,
+        "dropped": [],
+        "confirmed": []
+      },
+      "demo": false,
+      "outreach": null
+    },
+    {
+      "rank": 9,
+      "first_pass_rank": 9,
+      "first_pass_score": 52.0,
+      "score": 52.0,
+      "pain": 40,
+      "fit": 70,
+      "slug": "groveatxdental",
+      "name": "Grove Austin Family Dental",
+      "niche": "dental",
+      "url": "https://groveatxdental.com/",
+      "phone": "+15124525713",
+      "address": null,
+      "services": [
+        "Emergency Dentistry",
+        "Dental Implants",
+        "Porcelain Crowns",
+        "Cosmetic Veneers"
+      ],
+      "booking": "request_form",
+      "booking_evidence": "https://groveatxdental.com/request-an-appointment.html",
+      "text_option": true,
+      "prices": [],
+      "hours": null,
+      "has_faq": false,
+      "offer": null,
+      "gaps": [
+        {
+          "key": "request_form_only",
+          "points": 20,
+          "headline": "Booking is a request form, so every request waits for a call back",
+          "evidence": "https://groveatxdental.com/request-an-appointment.html"
+        },
+        {
+          "key": "no_prices",
+          "points": 10,
+          "headline": "No prices on the homepage, so price-shoppers have to call to ask",
+          "evidence": "no dollar amounts on the homepage"
+        },
+        {
+          "key": "no_faq",
+          "points": 10,
+          "headline": "No FAQ, so the same questions land on the front desk",
+          "evidence": "no FAQ section or FAQ page linked"
+        }
+      ],
+      "corrections": [],
+      "verification": {
+        "verified": false,
+        "dropped": [],
+        "confirmed": []
+      },
+      "demo": false,
+      "outreach": null
+    },
+    {
+      "rank": 10,
+      "first_pass_rank": 10,
+      "first_pass_score": 51.0,
+      "score": 51.0,
+      "pain": 45,
+      "fit": 60,
+      "slug": "austinfamilydds",
+      "name": "Austin Family Dentistry",
+      "niche": "dental",
+      "url": "https://austinfamilydds.com/",
+      "phone": null,
+      "address": null,
+      "services": [
+        "Invisalign",
+        "Dental Implants",
+        "Teeth Whitening",
+        "Veneers",
+        "Gum Grafting",
+        "Oral Surgery"
+      ],
+      "booking": "request_form",
+      "booking_evidence": "https://austinfamilydds.com/book-an-appointment/",
+      "text_option": false,
+      "prices": [
+        "Initial Invisalign treatment $2100 off for all new patients",
+        "Membership program $32/Per Month or $320/Per Year for children",
+        "Membership program $48/Per Month or $480/Per Year for adults",
+        "Membership program $78/Per Month or $780/Per Year for periodontal maintenance"
+      ],
+      "hours": null,
+      "has_faq": false,
+      "offer": "Initial Invisalign treatment $2100 off for all new patients",
+      "gaps": [
+        {
+          "key": "request_form_only",
+          "points": 20,
+          "headline": "Booking is a request form, so every request waits for a call back",
+          "evidence": "https://austinfamilydds.com/book-an-appointment/"
+        },
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; patients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "no_faq",
+          "points": 10,
+          "headline": "No FAQ, so the same questions land on the front desk",
+          "evidence": "no FAQ section or FAQ page linked"
+        }
+      ],
+      "corrections": [],
+      "verification": {
+        "verified": false,
+        "dropped": [],
+        "confirmed": []
+      },
+      "demo": false,
+      "outreach": null
+    },
+    {
+      "rank": 11,
+      "first_pass_rank": 11,
+      "first_pass_score": 41.0,
+      "score": 41.0,
+      "pain": 35,
+      "fit": 50,
+      "slug": "atxfamilydental",
+      "name": "ATX Family Dental",
+      "niche": "dental",
+      "url": "https://www.atxfamilydental.com/",
+      "phone": null,
+      "address": null,
+      "services": [
+        "preventive dentistry",
+        "restorative dentistry",
+        "cosmetic dentistry"
+      ],
+      "booking": "instant",
+      "booking_evidence": "https://flexbook.me/atxfd/website",
+      "text_option": false,
+      "prices": [],
+      "hours": null,
+      "has_faq": false,
+      "offer": null,
+      "gaps": [
+        {
+          "key": "no_text",
+          "points": 15,
+          "headline": "No way to text or chat; patients who won't call have no option",
+          "evidence": "no sms: link or text/chat option on the homepage"
+        },
+        {
+          "key": "no_prices",
+          "points": 10,
+          "headline": "No prices on the homepage, so price-shoppers have to call to ask",
+          "evidence": "no dollar amounts on the homepage"
+        },
+        {
+          "key": "no_faq",
+          "points": 10,
+          "headline": "No FAQ, so the same questions land on the front desk",
+          "evidence": "no FAQ section or FAQ page linked"
+        }
+      ],
+      "corrections": [],
+      "verification": {
+        "verified": false,
+        "dropped": [],
+        "confirmed": []
+      },
+      "demo": false,
+      "outreach": null
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://coolcreekfamilydental.com/",
+      "reason": "HTTP 403: page not actually read",
+      "model_output": "Example Business Name"
+    }
+  ]
+}
