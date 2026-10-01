@@ -52,6 +52,7 @@ Leads 6–11 are audited from their homepage only and marked *verify before outr
 python -m leadengine.run                 # audit → verify → rank → drafts → data/leads.json
 python -m leadengine.demo                # needs the brain API (BRAIN_URL, default http://localhost:8000)
 pytest -q tests                          # 10 pipeline tests
+python -m casestudy.build                # data/*.json → casestudy/index.html
 ```
 Collection (search and scrape) ran through Firecrawl; raw responses are stored verbatim in
 `data/raw/austin_tx.json`, and deeper pages as excerpts in `data/sites/<slug>/`.
@@ -62,7 +63,7 @@ Collection (search and scrape) ran through Firecrawl; raw responses are stored v
 - A gap goes into a draft only if a deeper page doesn't contradict it.
 
 ## Next
-1. Record the demo conversations with the NVIDIA-backed brain and publish a case-study page
+1. Fix the McLane hours miss in the brain (see `casestudy/index.html`: "Fri." scores 0.28, under the 0.30 cutoff), then re-record demos
 2. Verify leads 6–11 (one deeper page each)
 3. Google Places for discovery and review-response rate (needs `GOOGLE_PLACES_API_KEY`)
 4. Reply classification and a CRM table in Supabase

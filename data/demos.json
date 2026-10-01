@@ -1,0 +1,157 @@
+[
+  {
+    "slug": "mclanefamilydental",
+    "name": "McLane Family Dental",
+    "niche": "dental",
+    "pages": [
+      "home.md"
+    ],
+    "ingest": {
+      "added": 1,
+      "updated": 0,
+      "unchanged": 0,
+      "chunks": 7
+    },
+    "turns": [
+      {
+        "user": "Are you accepting new patients?",
+        "bot": "We are accepting new patients. [1]",
+        "state": "idle",
+        "citations": [
+          "New Patients"
+        ]
+      },
+      {
+        "user": "Are you open on Fridays?",
+        "bot": "I don't have that information right now, so I'll connect you with our team. Could you share your name and phone number?",
+        "state": "collecting_details",
+        "citations": []
+      },
+      {
+        "user": "Do you offer sedation dentistry?",
+        "bot": "Yes, we offer sedation dentistry. [1]\n\nFor your earlier question: Could you share your name and phone number?",
+        "state": "collecting_details",
+        "citations": [
+          "Featured Services"
+        ]
+      },
+      {
+        "user": "How much is a cleaning without insurance?",
+        "bot": "Could you share your name and phone number?",
+        "state": "collecting_details",
+        "citations": []
+      },
+      {
+        "user": "Maria Lopez, 512 555 0142",
+        "bot": "Thank you, Maria Lopez. I've passed this to our team and they will call you on +1 512-555-0142 soon.",
+        "state": "handoff_open",
+        "citations": []
+      }
+    ]
+  },
+  {
+    "slug": "hillcountryfamilydental",
+    "name": "Hill Country Family Dental",
+    "niche": "dental",
+    "pages": [
+      "faq.md"
+    ],
+    "ingest": {
+      "added": 1,
+      "updated": 0,
+      "unchanged": 0,
+      "chunks": 11
+    },
+    "turns": [
+      {
+        "user": "How much is an emergency exam?",
+        "bot": "$49 Emergency Exam & X-ray. [1]",
+        "state": "idle",
+        "citations": [
+          "New patient specials"
+        ]
+      },
+      {
+        "user": "Do root canals hurt?",
+        "bot": "Today, with modern technology and better anesthetics, most patients report a pain-free experience and can expect very little discomfort. [2]",
+        "state": "idle",
+        "citations": [
+          "Do root canals hurt?"
+        ]
+      },
+      {
+        "user": "Can I drive myself home after a root canal?",
+        "bot": "Most treatments are performed using local anesthetic and its effects do not impair driving. Patients utilizing oral sedation will need a driver to bring them to and from their appointment on the day of their procedure. [3]",
+        "state": "idle",
+        "citations": [
+          "Can I drive myself home after the procedure?"
+        ]
+      },
+      {
+        "user": "Do you offer Invisalign?",
+        "bot": "I don't have that information right now, so I'll connect you with our team. Could you share your name and phone number?",
+        "state": "collecting_details",
+        "citations": []
+      },
+      {
+        "user": "James Carter 512-555-0187",
+        "bot": "Thank you, James Carter. I've passed this to our team and they will call you on +1 512-555-0187 soon.",
+        "state": "handoff_open",
+        "citations": []
+      }
+    ]
+  },
+  {
+    "slug": "austinsimplyfit",
+    "name": "Austin Simply Fit",
+    "niche": "fitness coach",
+    "pages": [
+      "get-started.md"
+    ],
+    "ingest": {
+      "added": 1,
+      "updated": 0,
+      "unchanged": 0,
+      "chunks": 11
+    },
+    "turns": [
+      {
+        "user": "Is the first consultation free?",
+        "bot": "Yes, the first consultation is free. [4]",
+        "state": "idle",
+        "citations": [
+          "How do I get started with personal training at Austin Simply Fit?"
+        ]
+      },
+      {
+        "user": "How long are the training sessions?",
+        "bot": "30-minute sessions. [2][3]",
+        "state": "idle",
+        "citations": [
+          "Personal Training Programs",
+          "How is Austin Simply Fit different from signing up at a commercial gym?"
+        ]
+      },
+      {
+        "user": "Do I have to sign a long-term contract?",
+        "bot": "No, there are no long-term contracts or memberships required. [1]",
+        "state": "idle",
+        "citations": [
+          "What happens after the free consultation? Am I locked into anything?"
+        ]
+      },
+      {
+        "user": "How much does a 10-session package cost?",
+        "bot": "I don't have that information right now, so I'll connect you with our team. Could you share your name and phone number?",
+        "state": "collecting_details",
+        "citations": []
+      },
+      {
+        "user": "Priya Shah, 512 555 0119",
+        "bot": "Thank you, Priya Shah. I've passed this to our team and they will call you on +1 512-555-0119 soon.",
+        "state": "handoff_open",
+        "citations": []
+      }
+    ]
+  }
+]
